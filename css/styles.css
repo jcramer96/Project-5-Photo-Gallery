@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    height: 50px;
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.gallery-container {
+    max-width: 1000px;
+    display: grid;
+    margin: auto;
+    padding: 0 20px 50px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 100px 200x;
+    grid-gap: 25px;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
