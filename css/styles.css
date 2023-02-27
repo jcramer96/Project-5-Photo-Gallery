@@ -10,21 +10,21 @@
     display: flex;
 }
 
-input {
+#search {
     height: 50px;
-    width: 600px;
+    width: 50%;
     border: 1px solid gray;
     border-radius: 5px;
     padding-left: 10px;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .gallery-container {
     max-width: 1000px;
     display: grid;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 20px 50px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 100px 200x;
     grid-gap: 25px;
 }
@@ -33,4 +33,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
 }
