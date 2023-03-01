@@ -27,12 +27,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 200px;
     grid-gap: 25px;
-}
-
-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
 @keyframes fadeIn {

@@ -1,21 +1,25 @@
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+  });
+
 const photoSearch = document.getElementById('search');
+let photos = document.querySelectorAll('.gallery a');
+
 
 photoSearch.addEventListener('keyup', e =>{
     let currentValue = e.target.value.toLowerCase();
-    let photos = document.querySelectorAll('img');
 
     photos.forEach(photo => {
         const caption = photo.getAttribute('data-caption');
         if (caption.toLowerCase().includes(currentValue)) {
-            photo.style.display = 'grid';
+            photo.style.display = 'block';
         } else {
             photo.style.display = 'none';
         }
     });
 });
 
-
-const photos = document.querySelectorAll('img');
+// Animation Delay for Gallery
 
 photos.forEach(photo => {
     let randomAniDelay = Math.floor(Math.random() * 500);
